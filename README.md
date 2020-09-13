@@ -1,4 +1,4 @@
-# Lib em Rust executada em nodejs
+# Lib em Rust, chamada pelo nodejs
 
 ##
 ```zsh
