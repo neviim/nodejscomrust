@@ -5,10 +5,10 @@ authors = ["Neviim <neviimdev@gmail.com>"]
 edition = "2018"
 
 [lib]
-name = "hello_lib"
+name = "pong_lib"
 path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 
 [dependencies]
-wasm-bindgen = "0.2.59"
+wasm-bindgen = "=0.2.61"

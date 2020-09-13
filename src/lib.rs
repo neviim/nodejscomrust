@@ -2,6 +2,6 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub fn say(s: &str) -> String {
-    let r = String::from("Pong ");
+    let r = String::from("Ping ");
     return r + s;
 }
