@@ -1,4 +1,4 @@
-# Lib em Rust, chamada pelo nodejs
+# Lib em Rust, usada em nodejs
 
 ##  comandos basicos
 ```zsh
@@ -24,7 +24,7 @@ cargo build --target wasm32-unknown-unknown
 rustup target add wasm32-unknown-unknown
 rustup target add wasm32-wasi
 
-# Build o bytecode WASM, criara a parta (./pkg)
+# Build o bytecode WASM, dentro da pasta [pkg]
 ssvmup build
 ```
 
@@ -46,14 +46,15 @@ sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
 
 curl http://127.0.0.1:8080/?name=Pong!
 curl http://192.168.0.46:8080/?name=Pong!
+
 Ping Pong!
 ```
 
 ## SSVM Performance - referencias
-`A Second State Virtual Machine (SSVM) é um tempo de execução de WebAssembly 
+A Second State Virtual Machine (SSVM) é um tempo de execução de WebAssembly 
 de código aberto otimizado para aplicativos do lado do servidor O SSVM fornece 
 não apenas um tempo de execução WebAssembly em Node.js, mas também um conjunto
-de ferramentas do compilador ssvmup para Rust e JavaScript.`
+de ferramentas do compilador ssvmup para Rust e JavaScript.
 ```zsh
 https://www.hellorust.com/news/native-wasm-target.html
 https://rustwasm.github.io/book/reference/add-wasm-support-to-crate.html
